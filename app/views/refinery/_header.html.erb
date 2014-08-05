@@ -1,5 +1,9 @@
 <h1 id='logo'>
   <%= link_to Refinery::Core.site_name, refinery.root_path %>
 </h1>
-<%= Refinery::Pages::MenuPresenter.new(refinery_menu_pages, self).to_html %>
-<%#= header_menu.to_html %>
+
+<ul>
+<% Refinery::Page.in_menu.each do |item| %>
+  <li><%= link_to item.title, item.url %></li>
+<% end %>
+</ul>
