@@ -6,16 +6,16 @@
   </head>
   <body id="<%= canonical_id @page %>">
     <%#= site_bar -%>
-    <div id="page_container">
+    <div id="page_container" class="container-fluid">
       <header id="header">
         <%= render "/refinery/header" -%>
       </header>
-      <section id="page">
+      <section id="page" class="container">
         <%= yield %>
       </section>
-      <footer>
-        <%= render "/refinery/footer" -%>
-      </footer>
+      <!-- <footer>
+        <%#= render "/refinery/footer" -%>
+      </footer> -->
     </div>
     <%= render "/refinery/javascripts" %>
   </body>

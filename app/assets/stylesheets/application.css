@@ -1,6 +1,9 @@
 /*
  *= require refinery/formatting
  *= require refinery/theme
+ *= require bootstrap
+ *= require font-awesome
  *= require_self
- *= require_tree .
 */
+
+header a h1 { display: block; font-size: 12px; margin: 19px 0px 0px 15px; }
