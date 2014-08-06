@@ -52,4 +52,12 @@ gem 'refinerycms-acts-as-indexed', '~> 1.0.0'
 gem 'bootstrap-sass', '~> 3.1.1'
 gem 'font-awesome-sass'
 
-gem 'thin'
+gem 'execjs'
+gem 'therubyracer'
+
+group :development do
+  gem 'thin'
+  gem 'capistrano'
+  gem 'capistrano-rvm'
+  gem 'capistrano-rails'
+end
