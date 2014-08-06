@@ -1,4 +1,5 @@
 <p>
   <%= t('.copyright', :year => Time.now.year,
                       :site_name => Refinery::Core.site_name) %>
+  <%= link_to 'admin', '/'+Refinery::Core.backend_route, class: 'admin' %>
 </p>
