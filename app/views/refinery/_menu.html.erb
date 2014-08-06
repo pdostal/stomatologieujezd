@@ -1,0 +1,5 @@
+<ul>
+<% Refinery::Page.in_menu.each do |item| %>
+  <li><%= link_to item.title, item.url %></li>
+<% end %>
+</ul>

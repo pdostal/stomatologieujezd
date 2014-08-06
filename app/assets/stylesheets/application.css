@@ -6,4 +6,17 @@
  *= require_self
 */
 
-header a h1 { display: block; font-size: 12px; margin: 19px 0px 0px 15px; }
+@import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+
+header a h1 { font-family: 'Yanone Kaffeesatz', sans-serif; font-size: 36px; margin-top: 19px 0px 0px 0px; }
+
+aside { padding: 10px 15px 0px 0px !important; }
+aside ul { padding: 0px; }
+aside li { margin: 7.5px 0px; }
+aside li { width: 100%; display: block; }
+aside li a { width: 100%; display: block; padding-left: 15px; }
+aside li a { font-size: 22px; text-transform: uppercase; border: 3px solid #fff; border-radius: 15px; }
+aside li a:hover { text-decoration: none; background-color: #DEEAF6; }
+aside li a:hover { border: 3px solid #A2C6EA; }
+
+#page h1, #page h2,#page h3 { color: #428bca; font-size: 22px; }

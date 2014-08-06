@@ -7,15 +7,15 @@
   <body id="<%= canonical_id @page %>">
     <%#= site_bar -%>
     <div id="page_container" class="container-fluid">
-      <header id="header">
+      <header id="header" class="col-sm-10 col-sm-offset-2">
         <%= render "/refinery/header" -%>
       </header>
-      <section id="page" class="container">
+      <aside class="col-sm-2">
+        <%= render "/refinery/menu" -%>
+      </aside>
+      <section id="page" class="col-sm-10">
         <%= yield %>
       </section>
-      <!-- <footer>
-        <%#= render "/refinery/footer" -%>
-      </footer> -->
     </div>
     <%= render "/refinery/javascripts" %>
   </body>
